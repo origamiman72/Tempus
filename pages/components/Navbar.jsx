@@ -32,7 +32,7 @@ function Navbar({ router }) {
             <li>
               <a onClick={ () => {
 
-                signOut({callbackUrl: 'https://tempusio.herokuapp/'})
+                signOut()
                 Router.push('/');
               }
                 } className={`nav-item ${ router.pathname == '/login' ? 'active' : '' }`}>Sign Out</a>
